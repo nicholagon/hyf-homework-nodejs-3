@@ -4,6 +4,6 @@ const port = 3000
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-app.get('/users', (req, res) => res.send(<users/>))
+app.get('/users', (req, res) => res.sendStatus(200))
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
